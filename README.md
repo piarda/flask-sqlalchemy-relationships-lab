@@ -1,5 +1,31 @@
 # Lab: Flask SQLAlchemy Relationships
 
+This project is a Flask application that demonstrates how to model and manage relationships between database tables using SQLAlchemy. It includes models for Events, Sessions, Speakers, and Bios, with proper associations and RESTful API endpoints to interact with the data.
+
+## Running the Application:
+Start the Flask development server via:
+    flask run
+
+The API will be available at http://127.0.0.1:5000/
+
+## API Endpoints:
+- GET /events — Retrieve a list of all events.
+- GET /events/<int:id>/sessions — Retrieve all sessions for a given event.
+- GET /speakers — Retrieve a list of all speakers.
+- GET /speakers/<int:id> — Retrieve a speaker with their bio.
+- GET /sessions/<int:id>/speakers — Retrieve speakers for a given session.
+
+All responses are in JSON format.
+
+## Testing:
+Run the test suite via:
+    pytest
+
+All tests should pass without warnings.
+
+------------------------------------------
+
+
 ## Scenario
 
 You have just been hired as a junior backend engineer at a 
